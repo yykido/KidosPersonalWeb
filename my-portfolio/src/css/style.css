@@ -1,0 +1,229 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* About Section Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.junior-tag {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+/* Workflow Section Styles */
+#workflow {
+    margin-top: 50px;
+}
+
+.workflow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.workflow-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #888;
+}
+
+.step-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Projects Section Styles */
+#projects {
+    margin-top: 50px;
+}
+
+.project-card {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-card.inverted {
+    flex-direction: row-reverse;
+    background-color: #f0f0f0;
+}
+
+.project-image {
+    flex: 1;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+}
+
+.project-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info .tech {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.project-info .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-card.inverted .project-links a {
+    color: #000;
+}
+
+/* Skills Section Styles */
+#skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.skills-container {
+    flex: 1;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.additional-skills {
+    margin-top: 30px;
+}
+
+.resume-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
