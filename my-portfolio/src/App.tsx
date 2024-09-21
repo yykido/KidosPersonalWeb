@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './css/style.css';
 import Header from './components/Header';
-import About from './components/About';
+import Home from './components/Home';
+import MyStory from './components/MyStory';
 import MyWorkflow from './components/MyWorkflow';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -16,7 +17,8 @@ function App() {
       <div className="container">
         <Header />
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/story" element={<MyStory />} />
           <Route path="/workflow" element={<MyWorkflow />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Education />} />

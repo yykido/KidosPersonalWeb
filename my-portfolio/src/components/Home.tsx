@@ -1,8 +1,8 @@
 import React from 'react';
 
-const About: React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <section id="about">
+    <section id="home">
       <div className="main-content">
         <div className="text-content">
           <span className="junior-tag">JUNIOR</span>
@@ -14,10 +14,10 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-        <img src="/profile.jpg" alt="Yang Zheng" className="profile-photo" />
+        <img src="/profile.jpg" alt="Stefano Ye" className="profile-photo" />
       </div>
     </section>
   );
 };
 
-export default About;
+export default Home;
