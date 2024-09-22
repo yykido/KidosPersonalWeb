@@ -25,21 +25,26 @@ const additionalSkills = [
 const MySkill: React.FC = () => {
   return (
     <section id="skills">
-      <h2>MY SKILLS</h2>
       <div className="skills-container">
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill-item">
-              <img src={`/icons/${skill.icon}`} alt={skill.name} className="skill-icon" />
-              <span>{skill.name}</span>
-            </div>
-          ))}
+        <div className="skills-content">
+          <h2>MY SKILLS</h2>
+          <div className="skills-grid">
+            {skills.map((skill, index) => (
+              <div key={index} className="skill-item">
+                <img src={`/icons/${skill.icon}`} alt={skill.name} className="skill-icon" />
+                <span>{skill.name}</span>
+              </div>
+            ))}
+          </div>
+          <div className="additional-skills">
+            <h3>ALSO SOME BUNCH OF ORDINARY SKILLS:</h3>
+            <p>{additionalSkills.join(', ')}</p>
+          </div>
+          <button className="resume-button">Get my resume</button>
         </div>
-        <div className="additional-skills">
-          <h3>ALSO SOME BUNCH OF ORDINARY SKILLS:</h3>
-          <p>{additionalSkills.join(', ')}</p>
+        <div className="skills-image">
+          <img src="/profile-working.jpg" alt="Profile working" />
         </div>
-        <button className="resume-button">Get my resume</button>
       </div>
     </section>
   );

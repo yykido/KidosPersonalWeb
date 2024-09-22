@@ -11,11 +11,11 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'GOOD OFFICE',
+    title: 'WECHAT AI ASSISTANT',
     tech: 'FIREBASE, HTML, CSS, REACT.JS, TYPESCRIPT, GITLAB',
     description: 'The main goal was to develop a service to optimize work in the office. Created together with the customer a completely new service on the Ukrainian market to optimize work and services in the office. Helped solve the problem of modern society to save time and use it more organically.',
     githubLink: '#',
-    image: '/images/good-office.png',
+    image: 'https://wechaty.github.io/wechaty/images/wechaty-logo-green-en.png',
   },
   {
     title: 'DRIVE2',
@@ -40,9 +40,11 @@ const Projects: React.FC = () => {
       <h2>MY PROJECTS</h2>
       {projects.map((project, index) => (
         <div key={index} className={`project-card ${project.isInverted ? 'inverted' : ''}`}>
-          <div className="project-image">
-            <img src={project.image} alt={project.title} />
-          </div>
+          {!project.isInverted && (
+            <div className="project-image">
+              <img src={project.image} alt={project.title} />
+            </div>
+          )}
           <div className="project-info">
             <h3>{project.title}</h3>
             <p className="tech">TECH: {project.tech}</p>
@@ -52,6 +54,11 @@ const Projects: React.FC = () => {
               <a href="#">Show more +</a>
             </div>
           </div>
+          {project.isInverted && (
+            <div className="project-image">
+              <img src={project.image} alt={project.title} />
+            </div>
+          )}
         </div>
       ))}
     </section>
