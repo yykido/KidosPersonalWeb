@@ -12,25 +12,25 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'WECHAT AI ASSISTANT',
-    tech: 'FIREBASE, HTML, CSS, REACT.JS, TYPESCRIPT, GITLAB',
-    description: 'The main goal was to develop a service to optimize work in the office. Created together with the customer a completely new service on the Ukrainian market to optimize work and services in the office. Helped solve the problem of modern society to save time and use it more organically.',
-    githubLink: '#',
+    tech: 'AWS, HTML, CSS, REACT.JS, TYPESCRIPT, GITLAB',
+    description: 'AutoWechat Bot is a WeChat bot that automatically replies to messages from specified contacts using the Wechaty framework. It can handle text and voice messages, and respond with both text and voice.',
+    githubLink: 'https://github.com/yykido/AutoWechat',
     image: 'https://wechaty.github.io/wechaty/images/wechaty-logo-green-en.png',
   },
   {
-    title: 'DRIVE2',
-    tech: 'FIREBASE, HTML, CSS, REACT.JS, TYPESCRIPT, GITHUB',
-    description: 'The main goal is to make a clone of the original Drive2 site, build the Flux architecture in practice and create the likely functionality, practice working with GitHub and Firebase. In this project, I improved my skills in terms of speed and quality of work. Independently figured out the work of Firebase.',
-    githubLink: '#',
-    image: '/images/drive2.png',
+    title: 'CLOUD NATIVE PRODUCT MANAGMENT SYSTEM',
+    tech: 'AWS, SPRING BOOT, TERRAFORM, ELB, RDS, S3, EC2',
+    description: 'This is a web application Library Management system built with spring boot and deployed on AWS.',
+    githubLink: 'https://github.com/yykido/CSYE6225-2023Spring',
+    image: 'https://miro.medium.com/v2/resize:fit:1200/1*ZiFLNDSY82SIcRwf6_f9Wg.jpeg',
     isInverted: true,
   },
   {
-    title: 'BIANU',
-    tech: 'HTML, CSS',
-    description: 'The goal of the project is to develop HTML-CSS skills. In this project, I improved my skills in terms of speed and quality of work.',
-    githubLink: '#',
-    image: '/images/bianu.png',
+    title: 'DUTCH AUCTION',
+    tech: 'HARDHAT, REACT, SOLIDITY, TYPESCRIPT',
+    description: "This project contains a Hardhat and React Dapp starter. The React Dapp interacts with the Greeter.sol smart contract running on a local Hardhat blockchain.",
+    githubLink: 'https://github.com/yykido/INFO7500/tree/main/v6.0',
+    image: 'https://pbs.twimg.com/media/GYLjDyUXsAAcxYX?format=jpg&name=medium',
   },
 ];
 
